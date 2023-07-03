@@ -1,5 +1,8 @@
 #writing methods to test
+import pytest
 
+
+@pytest.mark.sanity
 def testLogin():
     print("Login Successful")
 
