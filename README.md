@@ -12,3 +12,4 @@ pytest -vm sanity - uruchamiane są tylko testy z dekoratorem sanity
 
 pytest --markers -buildin markers
 
+pytest -v -s --browser chrome - odpala testy na chromie
