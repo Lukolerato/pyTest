@@ -1,10 +1,20 @@
 #writing methods to test
 
-def testLogin():
-    print("Login Successful")
+#first browse products then add items
+import pytest
 
-def testLogoff():
-    print("Logoff Successful")
 
-def testCalculation():
-    assert 2 + 2 == 4
+@pytest.fixture
+def setUp():
+    print("Launch browser")
+    print("Login")
+    print("browse products")
+    yield #here is goting to be additem executed
+    print("Logoff")
+    print("close browser")
+
+def testAddItemToCart(setUp):
+    print("add item")
+
+def testRemoveItemFromCart(setUp):
+    print("remove items")
