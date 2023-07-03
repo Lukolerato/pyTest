@@ -1,10 +1,11 @@
 #writing methods to test
 
-def testLogin():
-    print("Login Successful")
+#first browse products then add items
+import pytest
 
-def testLogoff():
-    print("Logoff Successful")
 
-def testCalculation():
-    assert 2 + 2 == 4
+def testAddItemToCart(tc_setup):
+    print("add item")
+
+def testRemoveItemFromCart(tc_setup):
+    print("remove items")
